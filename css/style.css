@@ -1,0 +1,45 @@
+body {
+	background-color: black;
+}
+.img1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+.img2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 120%);
+	height: 60px;
+	animation: spongebob 0.5s infinite;
+	animation-direction: alternate;
+}
+@keyframes spongebob {
+	0% {transform: translate(-50%, 120%) scale(1.2);}
+	25% {transform: translate(-50%, 120%) scale(1.4);}
+	50% {transform: translate(-50%, 120%) scale(1.5);}
+	75% {transform: translate(-50%, 120%) scale(1.8);}
+	100% {transform: translate(-50%, 120%) scale(2);}
+}
+.f-left {
+	float: left;
+}
+.clear {
+	clear: both;
+}
+.gif1 {
+	height: 200px;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+.gif2 {
+	height: 200px;
+	margin-left: 140px;
+	margin-top: 10px;
+}
+body:hover, .img1:hover, .img2:hover, .gif1:hover, .gif2:hover {
+	filter: grayscale(100%) invert(100%);
+}
